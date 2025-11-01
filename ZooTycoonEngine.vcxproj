@@ -113,6 +113,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>d3d11.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -130,18 +131,28 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="DX3D\Source\DX3D\Core\Logger.cpp" />
+    <ClCompile Include="ZooTycoon\Audio.cpp" />
     <ClCompile Include="DX3D\Source\DX3D\Core\Base.cpp" />
-    <ClCompile Include="DX3D\Source\DX3D\Core\Window\Win32\Win32Window.cpp" />
+    <ClCompile Include="DX3D\Source\DX3D\Window\Win32\Win32Window.cpp" />
     <ClCompile Include="DX3D\Source\DX3D\Game\Game.cpp" />
     <ClCompile Include="DX3D\Source\DX3D\Game\Win32\Win32Game.cpp" />
+    <ClCompile Include="DX3D\Source\DX3D\Graphics\GraphicsEngine.cpp" />
+    <ClCompile Include="DX3D\Source\DX3D\Graphics\RenderSystem.cpp" />
     <ClCompile Include="ZooTycoon\Main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="DX3D\Include\DX3D\Core\Common.h" />
+    <ClInclude Include="DX3D\Include\DX3D\Core\Logger.h" />
+    <ClInclude Include="ZooTycoon\Audio.h" />
     <ClInclude Include="DX3D\Include\DX3D\All.h" />
     <ClInclude Include="DX3D\Include\DX3D\Core\Base.h" />
     <ClInclude Include="DX3D\Include\DX3D\Core\Core.h" />
     <ClInclude Include="DX3D\Include\DX3D\Window\Window.h" />
     <ClInclude Include="DX3D\Include\DX3D\Game\Game.h" />
+    <ClInclude Include="DX3D\Include\DX3D\Graphics\GraphicsEngine.h" />
+    <ClInclude Include="DX3D\Source\DX3D\Graphics\RenderSystem.h" />
+    <ClInclude Include="ZooTycoon\GameTime.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
