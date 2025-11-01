@@ -1,4 +1,4 @@
-#include "RenderSystem.h"
+#include <DX3D/Graphics/RenderSystem.h>
 
 dx3d::RenderSystem::RenderSystem(const RenderSystemDesc& desc): Base(desc.base)
 {
