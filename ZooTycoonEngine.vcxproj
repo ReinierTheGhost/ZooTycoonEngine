@@ -158,6 +158,10 @@
     <ClInclude Include="DX3D\Include\DX3D\Graphics\GraphicsEngine.h" />
     <ClInclude Include="DX3D\Include\DX3D\Graphics\RenderSystem.h" />
   </ItemGroup>
+  <ItemGroup>
+    <Image Include="assets\icon.ico" />
+    <Image Include="assets\icon.png" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
