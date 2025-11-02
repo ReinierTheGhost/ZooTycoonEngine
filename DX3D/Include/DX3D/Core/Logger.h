@@ -12,7 +12,14 @@ namespace dx3d
 			Info
 		};
 		explicit Logger(LogLevel logLevel = LogLevel::Error);
-		void log(LogLevel level, const char* massave) const;
+		~Logger();
+		void log(LogLevel level, const char* massage);
+
+	protected:
+		Logger(const Logger&) = delete;
+		Logger(Logger&&) = delete;
+		Logger& operator = (const Logger&) = delete;
+		Logger& operator = (Logger&&) = delete;
 
 	private:
 		LogLevel m_logLevel = LogLevel::Error;
