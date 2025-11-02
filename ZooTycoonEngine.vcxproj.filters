@@ -36,10 +36,13 @@
     <ClCompile Include="DX3D\Source\DX3D\Graphics\RenderSystem.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="ZooTycoon\Audio.cpp">
+    <ClCompile Include="DX3D\Source\DX3D\Core\Logger.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="DX3D\Source\DX3D\Core\Logger.cpp">
+    <ClCompile Include="DX3D\Source\DX3D\Graphics\SwapChain.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DX3D\Source\DX3D\Game\Display.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -65,16 +68,25 @@
     <ClInclude Include="DX3D\Include\DX3D\Graphics\RenderSystem.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="ZooTycoon\GameTime.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ZooTycoon\Audio.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="DX3D\Include\DX3D\Core\Logger.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="DX3D\Include\DX3D\Core\Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Include\DX3D\Graphics\GraphicsLogUtils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Include\DX3D\Graphics\SwapChain.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Include\DX3D\Graphics\GraphicsResource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Include\DX3D\Math\Rect.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="DX3D\Include\DX3D\Game\Display.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
