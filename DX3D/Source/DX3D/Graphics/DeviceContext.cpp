@@ -14,7 +14,7 @@ void dx3d::DeviceContext::clearAndSetBackBuffer(const SwapChain& swapChain, cons
 	f32 fColor[] = { color.r,color.g,color.b,color.a };
 	auto rtv = swapChain.m_rtv.Get();
 	m_context->ClearRenderTargetView(rtv, fColor);
-	m_context->OMGetRenderTargets(1, &rtv, nullptr);
+	m_context->OMSetRenderTargets(1, &rtv, nullptr);
 }
 
 void dx3d::DeviceContext::setGraphicsPipelineState(const GraphicsPipelineState& pipeline)

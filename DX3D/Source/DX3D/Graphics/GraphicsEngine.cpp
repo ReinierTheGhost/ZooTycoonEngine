@@ -22,8 +22,9 @@ float4 VSMain(float3 pos: POSITION): SV_Position
 {
 return float4(pos.xyz ,1.0);
 }
-void PSMain()
+float4 PSMain(): SV_Target
 {
+return float4(1.0, 1.0, 1.0, 1.0);
 }
 )";
 	constexpr char shaderSourceName[] = "Basic";
@@ -39,11 +40,11 @@ void PSMain()
 	const Vec3 vertexList[] =
 	{
 		{-0.5f, -0.5f, 0.0f},
-		{0.0f, -0.5f, 0.0f},
+		{0.0f, 0.5f, 0.0f},
 		{0.5f, -0.5f, 0.0f}
 	};
 
-	m_vb = device.createVertexBuffer({vertexList, std::size(vertexList)});
+	m_vb = device.createVertexBuffer({vertexList, std::size(vertexList), sizeof(Vec3)});
 }
 
 dx3d::GraphicsEngine::~GraphicsEngine()
