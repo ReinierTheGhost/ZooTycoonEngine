@@ -3,6 +3,7 @@
 
 dx3d::SwapChain::SwapChain(const SwapChainDesc& desc, const GraphicsResourceDesc& gDesc): GraphicsResource(gDesc)
 {
+	if (!desc.winHandle) DX3DLogThrowInvalidArg("No window hndle provided.");
 
 	DXGI_SWAP_CHAIN_DESC dxgiDesc{};
 
